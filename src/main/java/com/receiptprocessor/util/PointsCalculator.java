@@ -34,7 +34,7 @@ public class PointsCalculator {
             String[] timeParts = receipt.getPurchaseTime().split(":");
             int hour = Integer.parseInt(timeParts[0]);
             int minute = Integer.parseInt(timeParts[1]);
-            if (hour == 14 || (hour == 15 && minute == 0)) {
+             if ((hour == 14 || hour == 15) && (hour != 15 || minute < 60)) {
                 points.addAndGet(10);
             }
 
