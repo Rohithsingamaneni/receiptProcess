@@ -3,10 +3,10 @@
 This is a Spring Boot application containerized using Docker. The application serves and exposes RESTful APIs for submitting receipt information and calculating points per the challenge mentioned.
 
 ## How to run this application
-1. Install Docker:.
-2. Clone this Repository:
+1. Install Docker
+2. Clone this Repository
 3. Build the Docker Image and run:
-    docker build -t receipt-processor .
+    docker build -t receipt-processor . ,
     docker run -p 8080:8080 receipt-processor
     http://localhost:8080-- to access the application
 
